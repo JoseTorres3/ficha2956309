@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+</head>
+
+<body>
+    <form action="" method="post">
+        <fieldset>
+            <legend>Datos de contacto</legend>
+            <label for="Email">Email</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="Telefono">Teléfono</label>
+            <input type="number" name="telefono" id="telefono" required>
+        </fieldset>
+        <br>
+        <fieldset>
+            <label for=""><input type="radio" name="genero" value="masculino" id="" required>Masculino</label>
+            <label for=""><input type="radio" name="genero" value="femenino" id="" required>Femenino</label>
+            <label for=""><input type="radio" name="genero" value="otro" id="" required>Otro</label> <br>
+        </fieldset>
+        <br>
+        <label for="ciudad">Ciudad</label>
+        <select name="ciudad" id="ciudad" required>
+            <option value="">Seleccione una ciudad</option>
+            <option value="medellín">Medellín</option>
+            <option value="cali">Cali</option>
+            <option value="bogota">Bogotá</option>
+            <option value="barranquilla">Barranquilla</option>
+        </select> <br> <br>
+
+        <label for="">Lenguaje de programación favorito</label>
+        <input list="programacion" name="programacion" id="programacion" required>
+        <details id="programacion">
+            <option value="php">Php</option>
+            <option value="python">Python</option>
+            <option value="javascript">javascript</option>
+            <option value="java">java</option>
+            <option value="c#">C shard</option>
+        </details> <br>
+
+        <label for=""><input type="button">button</label>
+        <br>
+        <label for="">Check o no check<input type="checkbox"></label>
+        <br>
+        <label for="">ingrese un color<input type="color"></label>
+        <br>
+        <label for="">Fecha<input type="date"></label>
+        <br>
+        <label for="">Email<input type="email"></label>
+        <br>
+        <label for="">Mes<input type="month"></label>
+        <br>
+        <label for="">Numero de sexo<input type="number"></label>
+        <br>
+        <label for="">Contraseña<input type="password"></label>
+        <br>
+        <label for="">Gei?<input type="radio"></label>
+        <br>
+        <label for="">hora<input type="time"></label>
+        <br>
+
+        <label for="nivel">relacione rango</label>
+        <input type="range" name="nivel" id="nivel" min="1" max="10" value="" step="1">
+        <label for=""></label>
+        <input type="text" name="usuario" id="usuario" pattern="[a -zA-Z0-9]" min="1" max="10">
+        <br>
+        <br>
+        <label for="">Ingrese su telefono</label>
+        <input type="number" size="">
+
+        <div>
+            <label for="uname">Elige un nombre de usuario: </label>
+            <input type="text" id="uname" name="name" required size="45" pattern="[a-z]{4,8}" maxlength="8" />
+            <span class="validity"></span>
+            <p>
+                Los nombres de usuario deben estar en minúsculas y tener entre 4 y 8
+                caracteres de longitud.
+            </p>
+        </div>
+        <div>
+            <button>Enviar</button>
+        </div>
+    </form>
+</body>
+
+</html>

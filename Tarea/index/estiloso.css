@@ -1,0 +1,40 @@
+*{
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.cabecera img {
+    display: block;
+    position: absolute;
+    z-index: -10;
+}
+
+.barraN{
+    overflow: hidden;
+}
+
+.barraN a {
+    float: left;
+    display: inline;
+    margin-left: 200px;
+    margin-top: 25px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.8em;
+  }
+
+
+.barraN input{
+    width: 200px;
+    height: 35px;
+    background-color: rgb(218, 218, 218);
+}
+
+.hr{
+    color: black;
+    width: 100%;
+    border: 1px solid;
+}
